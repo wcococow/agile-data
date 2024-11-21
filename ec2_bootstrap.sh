@@ -94,7 +94,7 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/hadoop
 # Install Spark
 echo "" | tee -a $LOG_FILE
 echo "Downloading and installing Spark 3.5.3 ..." | tee -a $LOG_FILE
-curl -Lko /tmp/spark-3.5.3-bin-hadoop3.tgz https://www.apache.org/dyn/closer.lua/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz
+curl -Lko /tmp/spark-3.5.3-bin-hadoop3.tgz https://dlcdn.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz
 mkdir -p /home/ubuntu/spark
 cd /home/ubuntu
 tar -xvf /tmp/spark-3.5.3-bin-hadoop3.tgz -C spark --strip-components=1

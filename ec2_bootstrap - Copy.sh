@@ -139,7 +139,7 @@ sudo chown -R mongodb:mongodb /data/db
 
 # run MongoDB as daemon
 echo "Running MongoDB as a daemon ..." | tee -a $LOG_FILE
-sudo systemctl start mongodb
+sudo systemctl start mongod
 
 # Get the MongoDB Java Driver
 echo "Fetching the MongoDB Java driver ..." | tee -a $LOG_FILE
